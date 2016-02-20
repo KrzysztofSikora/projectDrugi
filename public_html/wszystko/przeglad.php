@@ -17,7 +17,6 @@ $tabProd->bindParam(":dukty", $produkty, PDO::PARAM_STR);
 $tabProd->Execute();
 $tabProd = $tabProd ->fetch(PDO::FETCH_ASSOC);
 
-echo "<table border='2px'><tr><td>ID</td><td>Kategoria</td><td>Ilość</td><td>Cena</td><td>Opis</td><td>Zdjęcie</td></tr>";
 foreach($db->query('SELECT * FROM `produkty`') as $row) {
 
     $idProd = $row['idproduktu'];
@@ -43,8 +42,5 @@ foreach($db->query('SELECT * FROM `produkty`') as $row) {
 
 END;
 }
-
-echo "</table>";
-
 
 ?>
