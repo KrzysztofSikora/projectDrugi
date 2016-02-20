@@ -42,5 +42,4 @@ foreach($db->query('SELECT * FROM `produkty`') as $row) {
 
 END;
 }
-
 ?>
