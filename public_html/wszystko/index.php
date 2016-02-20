@@ -170,8 +170,9 @@ if(isset($_GET['error'])) {
 </nav>
 <!--koniec nawigacji-->
 
-<div class="row jumbotron">
-    <div class="container">
+
+<div class="container">
+    <div class="row jumbotron">
         <?php
         if(isset($_SESSION['user'])) {
 
@@ -187,7 +188,8 @@ if(isset($_GET['error'])) {
 
         }
         else {
-            echo '<div class="col-md-4">';    /*include 'logowanie.php';*/ echo '</div>'; // jeśli nie
+            echo '<div class="col-md-4">';
+            echo '</div>'; // jeśli nie
             echo '<div class="col-md-8">';
                 if(isset($_GET['page'])) {
 
@@ -199,12 +201,6 @@ if(isset($_GET['error'])) {
             echo '</div>';
 
 
-
-
-
-
-//            echo '<div class="col-md-4">';    /*include 'logowanie.php';*/ echo '</div>'; // jeśli nie
-//                include 'przeglad.php';echo '</div>'; // produkty dla niezalogowanego uzytkownika
         }
 
 
