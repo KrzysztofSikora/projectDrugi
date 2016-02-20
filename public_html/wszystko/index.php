@@ -170,7 +170,7 @@ if(isset($_GET['error'])) {
 </nav>
 <!--koniec nawigacji-->
 
-<div class="jumbotron">
+<div class="row jumbotron">
     <div class="container">
         <?php
         if(isset($_SESSION['user'])) {

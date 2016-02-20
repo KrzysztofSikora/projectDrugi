@@ -30,7 +30,7 @@ foreach($db->query('SELECT * FROM `produkty`') as $row) {
 
     <div style="float: left; padding: 6%">
     <img src='/wszystko/wyswietl_product_image.php?index=$idProd' width='200px' height='200px' style="margin-bottom: 4%"> <br>
-        <a href='zalogowany.php?page=opis&opis=$idProd'>oOpis</a><br>
+        <a href='zalogowany.php?page=opis&opis=$idProd'>Nazwa</a><br>
         Id produktu: $idProd <br>
         Kategoria: $kategoria <br>
         Dostępna ilość: $ilosc <br>
